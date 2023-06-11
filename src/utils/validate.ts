@@ -1,4 +1,4 @@
-import { AnySchema } from '@hapi/joi'
+import { AnySchema } from 'joi'
 import { RouterContext } from 'koa-router'
 
 import { respond400 } from './response'

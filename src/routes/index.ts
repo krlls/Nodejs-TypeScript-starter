@@ -10,7 +10,7 @@ const rootRouter = new Router()
 
 export const routers = (app: any) => {
   rootRouter.use(async (ctx, next) => {
-    ApiLogger.info(ctx, showNotEmpty(isEmpty(ctx.params), ctx.request.body))
+    ApiLogger.info(ctx, showNotEmpty(isEmpty(ctx.params), ctx.body))
     await next()
   })
   rootRouter.get('/', (ctx) => respond200plain(ctx, '🔥 Hello world!'))

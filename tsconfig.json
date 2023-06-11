@@ -20,7 +20,11 @@
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "strictPropertyInitialization": false, //for typeorm
-    "types": []
+    "typeRoots": [
+      "node_modules/@types",
+      "node_modules/koa-body",
+      "src/typings"
+    ]
   },
   "include": [
     "src/**/*"
